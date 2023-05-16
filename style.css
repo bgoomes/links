@@ -147,19 +147,21 @@
     /*border: 1.5px solid var(--text-color);*/
     outline: 4px solid var(--highlight-color);
   }
-  
-  .icon {
-    display: flex;
-  }
 
-  .icon-icon {
+  .destaque {
+    border-radius: 50px;
+    outline: 4px solid var(--highlight-color);
+    background: var(--surface-color-hover);
 
   }
   
-  footer {
-    padding: 24px 0;
+  .alinha {
     text-align: center;
     font-size: 12px;
+  }
+
+  .padding {
+    padding: 24px 0;
   }
   
   /* media queries */

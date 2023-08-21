@@ -3,10 +3,19 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  /* base de cores
+    #a842ff
+    #ba75ff
+    #313131
+    #fffffc
+  
+  */
   
   :root {
-    --text-color: white;
-    --bg-url: url(./img/bg-mobile.jpg);
+
+    --text-color: #fffffc;
+    --bg-url: #313131;
     --stroke-color: rgba(255, 255, 255, 0.5);
     --surface-color: rgba(255, 255, 255, 0.05);
     --surface-color-hover: rgba(0, 0, 0, 0.02);
@@ -15,9 +24,9 @@
   }
   
   .light {
-    --text-color: black;
+    --text-color: #313131;
     --color-h2: rgba(0, 0, 0, 0.6);
-    --bg-url: url(./img/bg-mobile-light.jpg);
+    --bg-url: #fffffc;
     --stroke-color: rgba(0, 0, 0, 0.5);
     --surface-color: rgba(0, 0, 0, 0.05);
     --surface-color-hover: rgba(0, 0, 0, 0.02);
@@ -32,7 +41,7 @@
   
   body * {
     font-family: "Inter", sans-serif;
-    color: var(--text-color);
+   
   }
   
   #container {
@@ -57,12 +66,13 @@
     font-weight: 500;
     font-size: 20px;
     margin-bottom: 20px ;
+    color: #a842ff;
   }
 
   #profile h2 {
     font-weight: 500;
     font-size: 14px;
-    color: var(--color-h2);
+    color: #fffffc;
     line-height: 1.5;
     margin-top: 8px;
   }
@@ -125,6 +135,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    color: antiquewhite;
   
     padding: 16px 24px;
   
@@ -145,7 +156,7 @@
   ul li a:hover {
     background: var(--surface-color-hover);
     /*border: 1.5px solid var(--text-color);*/
-    outline: 4px solid var(--highlight-color);
+    outline: 4px solid #a842ff;
   }
 
   .destaque {
@@ -158,22 +169,15 @@
   .alinha {
     text-align: center;
     font-size: 12px;
+    color: #fffffc;
   }
 
   .padding {
     padding: 24px 0;
   }
   
-  /* media queries */
-  @media (min-width: 700px) {
-    :root {
-      --bg-url: url(./img/bg-desktop.jpg);
-    }
   
-    .light {
-      --bg-url: url(./img/bg-desktop-light.jpg);
-    }
-  }
+
   
   /* animation */
   @keyframes slide-in {

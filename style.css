@@ -175,6 +175,15 @@
   .padding {
     padding: 24px 0;
   }
+
+  footer a{
+    text-decoration: none;
+    color: #fffffc;
+  }
+
+  footer a:hover{
+    color: #a842ff;
+  }
   
   
 
